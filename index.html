@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Municipal</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #1b0000;
+        }
+
+        h2 {
+            color: #310505;
+        }
+
+        .bg-text {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            background-color: #e6e6e6;
+            padding: 100px 24px 0 24px;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        .card {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #161616;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .text-center img {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        @media screen and (max-width: 767px) {
+            .bg-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-0">
+        <header id="cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <h1>Teatro Municipal</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#carousel-teatro">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cartaz">Em cartaz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aulas">Aulas de teatro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#local">Local</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <div id="carousel-teatro" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="7000" class="carousel-item active">
+                        <img class="d-block w-100" src="./img/banner1.jpg">
+                        <div class="carousel-caption">
+                            <h4 class="bg-text">O Teatro Municipal anuncia o festival de peças de 2023! Confira o que já foi confirmado e garanta seu ingresso.</h4>
+                        </div>
+                    </div>
+                    <div data-bs-interval="7000" class="carousel-item">
+                        <img class="d-block w-100" src="./img/banner2.jpg">
+                        <div class="carousel-caption">
+                            <h4 class="bg-text">Grupo de teatro do Canadá fará apresentação no teatro neste fim de semana. Últimos ingressos disponíveis.</h4>
+                        </div>
+                    </div>
+                    <div data-bs-interval="7000" class="carousel-item">
+                        <img class="d-block w-100" src="./img/banner3.jpg">
+                        <div class="carousel-caption">
+                            <h4 class="bg-text">Abertas as incrições para aulas de teatro, de graça, com duração de 1 ano e certificado. Inscrições aqui no site.</h4>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-teatro" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-teatro" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-teatro" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-teatro" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-teatro" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <section id="cartaz">
+                <h2>Em cartaz</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    13 Jan 2023 (20:00h)
+                                </div>
+                                <img src="./img/img1.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">O Fantasma da Opera</h4>
+                                    <h5 class="card-subtitle">Musical</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias ullam nesciunt nihil velit sunt dolor dolores dolore ex maiores quae atque iste, nulla natus qui quia porro error aliquam.</p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Comprar ingresso</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    14 Jan 2023 (20:00h)
+                                </div>
+                                <img src="./img/img2.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Os Saltimbancos</h4>
+                                    <h5 class="card-subtitle">Musical</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias ullam nesciunt nihil velit sunt dolor dolores dolore ex maiores quae atque iste, nulla natus qui quia porro error aliquam.</p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Comprar ingresso</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    15 Jan 2023 (20:00h)
+                                </div>
+                                <img src="./img/img3.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Alice no País das Maravilhas</h4>
+                                    <h5 class="card-subtitle">Fantasia</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias ullam nesciunt nihil velit sunt dolor dolores dolore ex maiores quae atque iste, nulla natus qui quia porro error aliquam.</p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Comprar ingresso</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    20 Jan 2023 (20:00h)
+                                </div>
+                                <img src="./img/img4.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Os Miseráveis</h4>
+                                    <h5 class="card-subtitle">Musical</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias ullam nesciunt nihil velit sunt dolor dolores dolore ex maiores quae atque iste, nulla natus qui quia porro error aliquam.</p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Comprar ingresso</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    21 Jan 2023 (20:00h)
+                                </div>
+                                <img src="./img/img5.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Cisne Negro</h4>
+                                    <h5 class="card-subtitle">Musical</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias ullam nesciunt nihil velit sunt dolor dolores dolore ex maiores quae atque iste, nulla natus qui quia porro error aliquam.</p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Comprar ingresso</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    22 Jan 2023 (20:00h)
+                                </div>
+                                <img src="./img/img6.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">O Mágico de Ozd</h4>
+                                    <h5 class="card-subtitle">Musical</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias ullam nesciunt nihil velit sunt dolor dolores dolore ex maiores quae atque iste, nulla natus qui quia porro error aliquam.</p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Comprar ingresso</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="aulas">
+                <h2>Aulas de teatro</h2>
+                <div class="text-center">
+                    <img src="./img/aula.jpg" alt="">
+                </div>
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh turpis, venenatis vel urna nec, rutrum vehicula sem. Nulla rhoncus sagittis lacus sed euismod. Suspendisse mauris nisi, interdum ut sapien at, congue feugiat quam. Integer nisl urna, condimentum eget risus ac, semper tristique ex. Fusce vitae dictum dolor. Nulla bibendum massa et cursus lobortis. Vestibulum sit amet est mauris. Aliquam ut scelerisque urna. Pellentesque fringilla iaculis ligula fringilla eleifend. Praesent suscipit sit amet enim varius venenatis. Duis nec libero et erat blandit porta in sit amet nunc. Mauris iaculis orci id risus vehicula accumsan. Duis ultricies, sapien et tincidunt tempus, orci metus viverra dolor, non egestas odio metus a lorem. Integer bibendum pulvinar tellus, a consequat erat viverra mattis.<br><br>Fusce magna purus, imperdiet at nibh et, venenatis hendrerit purus. Sed fermentum id mi vel ultrices. In pulvinar nisi rhoncus consectetur tincidunt. In convallis porttitor sem, a varius magna ornare a. Aenean eu leo a quam fringilla dignissim. Donec blandit augue ipsum, nec mattis massa egestas id. Donec dolor nunc, hendrerit ullamcorper risus quis, ullamcorper rhoncus tellus. Etiam ipsum velit, euismod in fermentum at, lacinia nec nunc. Maecenas mattis eleifend convallis. Suspendisse ac posuere dui. Fusce at leo ac tellus sollicitudin rutrum. Duis blandit vehicula vehicula. Vestibulum ultricies sem sed mi lacinia viverra. Phasellus lacinia efficitur leo at aliquam. Donec semper vulputate velit, eu pellentesque lacus rutrum sit amet. Nullam aliquam lorem sed massa eleifend congue.
+                </p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Fazer inscrição</button>
+                </div>
+            </section>
+            <section id="local">
+                <h2>Local</h2>
+                <div class="text-center">
+                    <img src="./img/teatro.jpg" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat accusamus eos laudantium aperiam incidunt animi iusto atque, qui a eum ea sunt praesentium ex repellat? Inventore iste numquam qui.
+                <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat accusamus eos laudantium aperiam incidunt animi iusto atque, qui a eum ea sunt praesentium ex repellat? Inventore iste numquam qui.
+                </p>
+                <div class="text-center">
+                    <img src="./img/mapa.jpg" alt="">
+                </div>
+            </section>
+        </div>
+        <footer>
+            &copy; 2023 - Teatro Municipal<br>Todos os direitos reservados<bR>Por: Victor Freire Oliveira
+        </footer>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
